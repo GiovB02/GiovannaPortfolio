@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="melanie.giovanna@gmail.com" 
+              href="#" 
               className="p-3 rounded-full bg-gray-800 hover:bg-emerald-600 transition-all duration-300 transform hover:scale-110"
             >
               <Mail size={20} />
