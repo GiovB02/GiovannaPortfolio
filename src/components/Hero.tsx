@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
             <a href="https://github.com/GiovB02" className="p-3 rounded-full bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 hover:bg-violet-100">
               <Github size={24} className="text-gray-700 hover:text-violet-600" />
             </a>
-            <a href="www.linkedin.com/in/melanie-giovanna-valle" className="p-3 rounded-full bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 hover:bg-violet-100">
+            <a href="https://www.linkedin.com/in/melanie-giovanna-valle/?locale=es" className="p-3 rounded-full bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 hover:bg-violet-100">
               <Linkedin size={24} className="text-gray-700 hover:text-violet-600" />
             </a>
           </div>
