@@ -21,13 +21,13 @@ const Experience: React.FC = () => {
       company: 'Centro de Liderazgo y Desarrollo ESEN',
       location: 'Nuevo Cuscatlán, El Salvador',
       period: '2023 - Presente',
-      description: 'Desarrollé aplicaciones web completas desde el frontend hasta el backend, trabajando con tecnologías modernas y metodologías ágiles.',
+      description: 'Factilitadora de campamentos y talleres de liderazgo, promoviendo habilidades de trabajo en equipo y crecimiento personal.',
       achievements: [
-        'Desarrollé 5 aplicaciones web desde cero',
-        'Implementé APIs RESTful robustas y escalables',
-        'Reduje el tiempo de carga de las páginas en un 35%'
+        'Impartición de charlas y capacitaciones a instituciones públicas y privadas.',
+        'Consultorías enfocadas en liderazgo y trabajo en equipo.',
+        'Formación en inteligencia emocional y bienestar organizacional.'
       ],
-      technologies: ['Liderazgo', 'Comunicación', 'Hablar en público', 'Organización', 'Proactividad']
+      technologies: ['Liderazgo', 'Comunicación', 'Logística', 'Organización', 'Proactividad']
     }
   ];
 
@@ -37,11 +37,11 @@ const Experience: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-blue-900 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-800 to-violet-600 bg-clip-text text-transparent">
                 Experiencia Laboral
               </span>
             </h2>
-            <div className="w-40 h-1 bg-blue-300 mx-auto rounded-full mb-6"></div>
+            <div className="w-40 h-1 bg-gradient-to-r from-blue-600 to-violet-600 mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Las experiencias que me permitieron crecer tanto personal como profesionalmente.
             </p>
@@ -49,18 +49,18 @@ const Experience: React.FC = () => {
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-pink-900"></div>
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-violet-200"></div>
             
             {experiences.map((exp, index) => (
               <div key={index} className="relative mb-12 ml-16">
                 {/* Timeline dot */}
-                <div className="absolute -left-10 top-6 w-4 h-4 bg-pink-700 rounded-full border-4 border-white shadow-lg"></div>
+                <div className="absolute -left-10 top-6 w-4 h-4 bg-violet-600 rounded-full border-4 border-white shadow-lg"></div>
                 
                 <div className="bg-slate-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:bg-slate-100 group">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-gray-800 mb-1 " >{exp.title}</h3>
-                      <a href="#" className="flex items-center text-blue-600 font-semibold mb-2 group-hover:text-pink-700   ">
+                      <a href="#" className="flex items-center text-blue-600 font-semibold mb-2 group-hover:text-violet-700   ">
                         <Briefcase size={16} className="mr-2" />
                         {exp.company}
                       </a>
@@ -94,7 +94,7 @@ const Experience: React.FC = () => {
                       {exp.technologies.map((tech, techIndex) => (
                         <span 
                           key={techIndex}
-                          className="px-3 py-1 bg-gradient-to-r from-blue-50 to-blue-200 text-blue-700 text-sm rounded-full font-medium group-hover:from-pink-100 group-hover:to-pink-200 group-hover:text-pink-700"
+                          className="px-3 py-1 bg-gradient-to-r from-blue-50 to-blue-200 text-blue-700 text-sm rounded-full font-medium group-hover:from-violet-100 group-hover:to-violet-200 group-hover:text-violet-700"
                         >
                           {tech}
                         </span>

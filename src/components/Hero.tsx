@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-80 h-80 mx-auto mb-8 rounded-full bg-blue-900 p-1 transition-all duration-300 transform hover:scale-105 hover:bg-pink-700">
+            <div className="w-52 h-52 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-800 to-violet-600 p-1 transition-all duration-300 transform hover:scale-105 hover:from-violet-600 hover:to-blue-800">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden ">
                 <img
                   src="../src/assets/images/Giovanna.jpg"
@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-4 transition-all duration-300 transform hover:scale-105">
-              <span className="bg-blue-900 bg-clip-text text-transparent transition-all duration-300 hover:bg-pink-700">
+              <span className="bg-gradient-to-r from-blue-800 to-violet-600 bg-clip-text text-transparent transition-all duration-300">
               Giovanna Valle
               </span>
             </h1>
@@ -37,12 +37,12 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button className="px-8 py-3 bg-blue-900 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:bg-pink-700 flex items-center gap-2">
+            <button className="px-8 py-3 bg-gradient-to-r from-blue-800 to-violet-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:from-violet-600 hover:to-blue-800 flex items-center gap-2">
               <a href="#projects">Ver Mis Proyectos</a>
             </button>
             <button 
               onClick={handleDownloadCV}
-              className="px-8 py-3 border-2 border-blue-800 text-blue-800 rounded-full font-semibold hover:shadow-lg hover:bg-pink-200 hover:border-pink-700 hover:text-pink-700 transition-all duration-300 flex items-center gap-2"
+              className="px-8 py-3 border-2 border-blue-800 text-blue-800 rounded-full font-semibold hover:shadow-lg hover:bg-violet-100 hover:border-violet-600 hover:text-violet-700 transition-all duration-300 flex items-center gap-2"
             >
               <Download size={20} />
               Descargar CV
@@ -50,11 +50,11 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="flex justify-center gap-6">
-            <a href="https://github.com/GiovB02" className="p-3 rounded-full bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 hover:bg-pink-100">
-              <Github size={24} className="text-gray-700 hover:text-pink-500" />
+            <a href="https://github.com/GiovB02" className="p-3 rounded-full bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 hover:bg-violet-100">
+              <Github size={24} className="text-gray-700 hover:text-violet-600" />
             </a>
-            <a href="www.linkedin.com/in/melanie-giovanna-valle" className="p-3 rounded-full bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 hover:bg-pink-100">
-              <Linkedin size={24} className="text-gray-700 hover:text-pink-500" />
+            <a href="www.linkedin.com/in/melanie-giovanna-valle" className="p-3 rounded-full bg-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 hover:bg-violet-100">
+              <Linkedin size={24} className="text-gray-700 hover:text-violet-600" />
             </a>
           </div>
         </div>

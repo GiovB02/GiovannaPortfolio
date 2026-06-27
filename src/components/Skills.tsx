@@ -26,11 +26,11 @@ const Skills: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-blue-900 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-800 to-violet-600 bg-clip-text text-transparent">
                 Habilidades
               </span>
             </h2>
-            <div className="w-40 h-1 bg-blue-300 mx-auto rounded-full mb-6"></div>
+            <div className="w-40 h-1 bg-gradient-to-r from-blue-600 to-violet-600 mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Una combinación de habilidades técnicas y competencias interpersonales 
               que me permiten crear soluciones completas y trabajar efectivamente en equipo.
@@ -45,12 +45,12 @@ const Skills: React.FC = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
               {hardSkills.map((skill, index) => (
                 <div key={index} className="text-center group">
-                  <div className="w-16 h-16 mx-auto mb-3 rounded-full bg-gradient-to-r from-pink-100 to-blue-100 flex items-center justify-center group-hover:from-pink-500 group-hover:to-blue-500 transition-all duration-300">
+                  <div className="w-16 h-16 mx-auto mb-3 rounded-full bg-gradient-to-r from-blue-100 to-violet-100 flex items-center justify-center group-hover:from-blue-500 group-hover:to-violet-500 transition-all duration-300">
                     <div className="text-blue-600 group-hover:text-white transition-colors duration-300">
                       {skill.icon}
                     </div>
                   </div>
-                  <p className="text-sm font-medium text-gray-700 group-hover:text-pink-700 transition-colors duration-300">
+                  <p className="text-sm font-medium text-gray-700 group-hover:text-violet-700 transition-colors duration-300">
                     {skill.name}
                   </p>
                 </div>
@@ -66,12 +66,12 @@ const Skills: React.FC = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
               {softSkills.map((skill, index) => (
                 <div key={index} className="text-center group">
-                  <div className="w-16 h-16 mx-auto mb-3 rounded-full bg-gradient-to-r from-blue-100 to-pink-100 flex items-center justify-center group-hover:from-blue-500 group-hover:to-pink-500 transition-all duration-300">
+                  <div className="w-16 h-16 mx-auto mb-3 rounded-full bg-gradient-to-r from-violet-100 to-blue-100 flex items-center justify-center group-hover:from-violet-500 group-hover:to-blue-500 transition-all duration-300">
                     <div className="text-blue-600 group-hover:text-white transition-colors duration-300">
                       {skill.icon}
                     </div>
                   </div>
-                  <p className="text-sm font-medium text-gray-700 group-hover:text-pink-700 transition-colors duration-300">
+                  <p className="text-sm font-medium text-gray-700 group-hover:text-violet-700 transition-colors duration-300">
                     {skill.name}
                   </p>
                 </div>

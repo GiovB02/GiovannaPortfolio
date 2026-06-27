@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <div className="text-3xl font-bold bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent mb-4">
+            <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent mb-4">
               Giovanna Valle
             </div>
             <p className="text-gray-400 max-w-2xl mx-auto">
@@ -18,19 +18,19 @@ const Footer: React.FC = () => {
           <div className="flex justify-center gap-6 mb-8">
             <a 
               href="https://github.com/GiovB02" 
-              className="p-3 rounded-full bg-gray-800 hover:bg-pink-600 transition-all duration-300 transform hover:scale-110"
+              className="p-3 rounded-full bg-gray-800 hover:bg-violet-600 transition-all duration-300 transform hover:scale-110"
             >
               <Github size={20} />
             </a>
             <a 
               href="https://www.linkedin.com/in/melanie-giovanna-valle" 
-              className="p-3 rounded-full bg-gray-800 hover:bg-blue-600 transition-all duration-300 transform hover:scale-110"
+              className="p-3 rounded-full bg-gray-800 hover:bg-blue-700 transition-all duration-300 transform hover:scale-110"
             >
               <Linkedin size={20} />
             </a>
             <a 
               href="#" 
-              className="p-3 rounded-full bg-gray-800 hover:bg-emerald-600 transition-all duration-300 transform hover:scale-110"
+              className="p-3 rounded-full bg-gray-800 hover:bg-violet-700 transition-all duration-300 transform hover:scale-110"
             >
               <Mail size={20} />
             </a>

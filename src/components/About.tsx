@@ -41,16 +41,16 @@ const About: React.FC = () => {
                 <p className="text-sm text-gray-600">Enfoque en entregar soluciones efectivas</p>
               </div>
 
-              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-blue-50 to-emerald-50 hover:shadow-lg transition-all duration-300">
-                <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-emerald-500 flex items-center justify-center">
+              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-blue-50 to-violet-50 hover:shadow-lg transition-all duration-300">
+                <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-violet-500 flex items-center justify-center">
                   <Lightbulb className="text-white" size={24} />
                 </div>
                 <h4 className="font-semibold text-gray-800 mb-2">Innovadora</h4>
                 <p className="text-sm text-gray-600">Siempre buscando nuevas formas de resolver problemas</p>
               </div>
 
-              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-emerald-50 to-violet-50 hover:shadow-lg transition-all duration-300">
-                <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-emerald-500 to-violet-500 flex items-center justify-center">
+              <div className="text-center p-6 rounded-xl bg-gradient-to-br from-violet-50 to-blue-50 hover:shadow-lg transition-all duration-300">
+                <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-r from-violet-500 to-blue-500 flex items-center justify-center">
                   <Heart className="text-white" size={24} />
                 </div>
                 <h4 className="font-semibold text-gray-800 mb-2">Colaborativa</h4>

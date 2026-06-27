@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
     <header className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-3xl font-bold bg-pink-700 bg-clip-text text-transparent">
+          <div className="text-2xl font-bold bg-gradient-to-r from-blue-800 to-violet-600 bg-clip-text text-transparent">
             Portafolio
           </div>
           
@@ -37,8 +37,8 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`text-2xl font-medium transition-colors duration-200 hover:text-pink-700 ${
-                  activeSection === item.id ? 'text-pink-700' : 'text-gray-700'
+                className={`text-base font-medium transition-colors duration-200 hover:text-violet-600 ${
+                  activeSection === item.id ? 'text-violet-600' : 'text-gray-700'
                 }`}
               >
                 {item.label}

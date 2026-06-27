@@ -48,11 +48,11 @@ const Projects: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-blue-800 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-800 to-violet-600 bg-clip-text text-transparent">
                 Mis Proyectos
               </span>
             </h2>
-            <div className="w-40 h-1 bg-blue-300 mx-auto rounded-full mb-6"></div>
+            <div className="w-40 h-1 bg-gradient-to-r from-blue-600 to-violet-600 mx-auto rounded-full mb-6"></div>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Una selección de proyectos que demuestran mis habilidades técnicas y creatividad 
               en el desarrollo web.
@@ -92,7 +92,7 @@ const Projects: React.FC = () => {
                       {project.technologies.map((tech, techIndex) => (
                         <span 
                           key={techIndex}
-                          className="px-3 py-1 bg-gradient-to-r from-pink-100 to-blue-100 text-pink-700 text-sm rounded-full font-medium"
+                          className="px-3 py-1 bg-gradient-to-r from-blue-100 to-violet-100 text-violet-700 text-sm rounded-full font-medium"
                         >
                           {tech}
                         </span>
@@ -103,7 +103,7 @@ const Projects: React.FC = () => {
                       {project.githubUrl && project.githubUrl !== '#' && (
                         <a 
                           href={project.githubUrl}
-                          className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg hover:border-pink-700 hover:text-pink-700 transition-colors duration-200"
+                          className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg hover:border-violet-600 hover:text-violet-700 transition-colors duration-200"
                         >
                           <Github size={16} />
                           <span className="text-sm font-medium">Código</span>
@@ -111,7 +111,7 @@ const Projects: React.FC = () => {
                       )}
                       <a 
                         href={project.liveUrl}
-                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-pink-600 to-blue-600 text-white rounded-lg hover:shadow-lg transition-all duration-200"
+                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-violet-600 text-white rounded-lg hover:shadow-lg transition-all duration-200"
                       >
                         <Eye size={16} />
                         <span className="text-sm font-medium">Ver Demo</span>
@@ -133,11 +133,11 @@ const Projects: React.FC = () => {
                     <h4 className="text-lg font-bold text-gray-800">{project.title}</h4>
                     <div className="flex gap-2">
                       {project.githubUrl && project.githubUrl !== '#' && (
-                        <a href={project.githubUrl} className="text-gray-500 hover:text-pink-600 transition-colors duration-200">
+                        <a href={project.githubUrl} className="text-gray-500 hover:text-violet-600 transition-colors duration-200">
                           <Github size={18} />
                         </a>
                       )}
-                      <a href={project.liveUrl} className="text-gray-500 hover:text-blue-600 transition-colors duration-200">
+                      <a href={project.liveUrl} className="text-gray-500 hover:text-violet-600 transition-colors duration-200">
                         <ExternalLink size={18} />
                       </a>
                     </div>
