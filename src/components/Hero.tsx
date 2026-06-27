@@ -1,10 +1,12 @@
 import React from 'react';
 import { Github, Linkedin, Download } from 'lucide-react';
+import giovannaImg from '../assets/images/Giovanna.jpg';
+import cvFile from '../assets/documents/CVGiovannaValle.pdf';
 
 const Hero: React.FC = () => {
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/src/assets/documents/CVGiovannaValle.pdf';
+    link.href = cvFile;
     link.download = 'CVGiovannaValle.pdf';
     document.body.appendChild(link);
     link.click();
@@ -19,7 +21,7 @@ const Hero: React.FC = () => {
             <div className="w-52 h-52 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-800 to-violet-600 p-1 transition-all duration-300 transform hover:scale-105 hover:from-violet-600 hover:to-blue-800">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden ">
                 <img
-                  src="../src/assets/images/Giovanna.jpg"
+                  src={giovannaImg}
                   alt="Giovanna Valle"
                   className="w-full h-full object-cover rounded-full"
                 />
